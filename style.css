@@ -109,6 +109,7 @@ img {
 .btn-lg {
     padding: 1.1rem 2rem;
     font-size: 1.2rem;   
+    border-radius: 50px;
 }
 
 
@@ -123,14 +124,38 @@ nav {
     background: var(--color-white);
 }
 
+/* Formatação para arredondar botões*/
 nav a {
     color: var(--color-black);
     font-size: 0.9rem;
     transition: all 400ms ease;
+    border-radius: 50px;
 }
 
+/* Animação dos botões*/
 nav a:hover {
     color: var(--color-primary);
+    letter-spacing: 0.5px;
+}
+
+nav a::after{
+    backface-visibility: hidden;
+    border: 1px solid var(--color-white);
+    content: "";
+    bottom: 0px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+
+nav a:hover::after{
+    backface-visibility: hidden;
+    border-color:  var(--color-primary);
+    transition: width 350ms ease-in-out;
+    width: 80%;
 }
 
 .nav__container {
