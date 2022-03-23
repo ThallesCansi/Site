@@ -267,7 +267,7 @@ section#companies {
 
 /* Início da sessão de serviços */
 section#servicos {
-    margin-top: 8rem;
+    margin-top: 15rem;
 }
 
 .services__container {
@@ -331,4 +331,78 @@ section#servicos {
 
 .services__card:hover a {
     margin-left: 1rem;
+}
+/* Fim da sessão de serviços (services) */
+
+/* Início da sessão de portfólio (portfolio) */
+#portfolio {
+    background: var(--color-light);
+}
+
+.portfolio__head {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.portfolio__head h3 {
+    width: 25%;
+}
+
+.portfolio__head-right {
+    width: 49%;
+}
+
+.portfolio__head-right a {
+    margin-top: 1.4rem;
+    display: inline-block;
+    color: var(--color-primary);
+    transition: all 400ms ease;
+}
+
+.portfolio__head-right a:hover {
+    margin-left: 1rem;
+}
+
+.portfolio__projects {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.portfolio__project {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 1rem;
+}
+
+.portfolio__project-image {
+    height: 20rem;
+    display: block;
+    border: 1rem solid var(--color-white);
+    overflow: hidden;
+    box-shadow: 0 0 1.6rem var(--color-primary-variant);
+    transition: all 400ms ease;
+}
+
+.portfolio__project-image:hover {
+    box-shadow: none;
+}
+
+.portfolio__project-image:hover img {
+    transform: 0;
+    transition: all 5s ease;
+}
+
+.portfolio__cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.portfolio__project-image:hover img {
+    transform: translateY(calc(-100% + 18rem));
 }
