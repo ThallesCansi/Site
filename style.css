@@ -88,6 +88,7 @@ img {
     border: 1px solid transparent;
     cursor: pointer;
     transition: all 400ms ease;
+    border-radius: 50px;
 }
 
 .btn:hover {
@@ -98,6 +99,7 @@ img {
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-light);
+    border-radius: 50px;
 }
 
 .btn-primary:hover {
@@ -110,6 +112,7 @@ img {
     padding: 1.1rem 2rem;
     font-size: 1.2rem;   
     border-radius: 50px;
+    margin-top:40px;
 }
 
 
@@ -161,6 +164,11 @@ nav a:hover::after{
     align-items: center;
 }
 
+.margin_nav {
+    box-shadow: 0 0 1.6rem var(--color-primary-variant);;
+    margin-bottom: 10px;
+}
+
 /* Abrir e fechar o botão para dispositivos com telas menores (telefones/tablets) */
 nav button {
     display: none;
@@ -187,6 +195,7 @@ header {
     display: grid;
     grid-template-columns: 40% 60%;
     height: 100%;
+    margin-top: 25px;
 }
 
 .header__left {
@@ -280,6 +289,7 @@ section#servicos {
     background: var(--color-primary);
     padding: 2rem;
     color: var(--color-light);
+    border-radius: 50px;
 }
 
 .services__left h1 {
@@ -305,10 +315,11 @@ section#servicos {
 }
 
 .services__card {
-    background: var(--color-light);
+    background: rgb(223, 216, 216);
     padding: 4rem 2rem;
     cursor: default;
     transition: all 400ms ease;
+    border-radius: 50px;
 }
 
 .services__card:hover {
@@ -387,6 +398,7 @@ section#servicos {
     overflow: hidden;
     box-shadow: 0 0 1.6rem var(--color-primary-variant);
     transition: all 400ms ease;
+    border-radius: 50px;
 }
 
 .portfolio__project-image:hover {
