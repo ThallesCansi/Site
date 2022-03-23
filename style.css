@@ -124,7 +124,6 @@ nav {
     background: var(--color-white);
 }
 
-/* Formatação para arredondar botões*/
 nav a {
     color: var(--color-black);
     font-size: 0.9rem;
@@ -132,7 +131,6 @@ nav a {
     border-radius: 50px;
 }
 
-/* Animação dos botões*/
 nav a:hover {
     color: var(--color-primary);
     letter-spacing: 0.5px;
@@ -149,7 +147,6 @@ nav a::after{
     transition: all 280ms ease-in-out;
     width: 0;
 }
-
 
 nav a:hover::after{
     backface-visibility: hidden;
@@ -266,4 +263,72 @@ section#companies {
 
 .companies__container span {
     padding: 2.4rem;
+}
+
+/* Início da sessão de serviços */
+section#servicos {
+    margin-top: 8rem;
+}
+
+.services__container {
+    display: grid;
+    grid-template-columns: 25% auto;
+    gap: 2rem;
+}
+
+.services__left {
+    background: var(--color-primary);
+    padding: 2rem;
+    color: var(--color-light);
+}
+
+.services__left h1 {
+    font-size: 7rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.services__left h4 {
+    line-height: 1.4;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.services__right h2 {
+    margin-bottom: 2rem;
+}
+
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.services__card {
+    background: var(--color-light);
+    padding: 4rem 2rem;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.services__card:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.services__card:hover * {
+    color: var(--color-white);
+    transition: all 400ms ease;
+}
+
+.services__card-icon {
+    font-size: 2rem;
+}
+
+.services__card h5 {
+    margin: 1rem 0;
+}
+
+.services__card:hover a {
+    margin-left: 1rem;
 }
