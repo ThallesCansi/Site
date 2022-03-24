@@ -125,7 +125,19 @@ nav {
     place-items: center;
     position: fixed;
     z-index: 2;
-    background: var(--color-white);
+}
+
+.window-scroll {
+    background: var(--color-black);
+    box-shadow: 0 1.5rem 1.5rem rgba(36, 0, 64, 0.2);
+}
+
+.window-scroll a {
+    color: var(--color-white);
+}
+
+.window-scroll .nav__logo h3 {
+    color: var(--color-white);
 }
 
 nav a {
