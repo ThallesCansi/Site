@@ -133,6 +133,11 @@ nav {
     box-shadow: 0 1.5rem 1.5rem rgba(36, 0, 64, 0.2);
 }
 
+.window-scroll .nav__container {
+    box-shadow: 0 0 1.6rem var(--color-black);;
+    margin-bottom: 10px;
+}
+
 .window-scroll a {
     color: var(--color-white);
 }
@@ -145,7 +150,7 @@ nav {
     display: block;
     margin: 0 auto;
     position: relative;
-    transition: all 280ms ease-in-out;
+    transition: all 0ms ease-in-out;
     width: 0;
 }
 
@@ -173,7 +178,7 @@ nav a::after{
     display: block;
     margin: 0 auto;
     position: relative;
-    transition: all 280ms ease-in-out;
+    transition: all 0ms ease-in-out;
     width: 0;
 }
 
@@ -446,30 +451,54 @@ section#servicos {
 }
 
 /* Início da sessão de linguas (competences) */
+#competences {
+    margin-bottom: 12em;
+    margin-top: 12em;
+}
+
 .competences__head {
     text-align:center
 }
 
 .all__languages {
-    display: flex;
-    flex-direction: column;
-    gap: 1.0rem;
-    background: var(--color-light);
-    padding: 1rem;
-    font-size: 1px solid transparent;
+    position: relative;
+    background-color: var(--color-black);
     border-radius: 50px;
-    align-items: stretch;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    padding-right: 10em;
+    padding-left: 10em;
 }
 
-.all__languages h3 {
+.all__languages h2 {
     text-align: center;
+    color: var(--color-white);
+    margin-top: 1em;
 }
 
 .languages {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 30rem;
+    text-align: center;
+    justify-content: center;
 }
+
+.language {
+    width: fit-content;
+    margin-top: 5em;
+    padding: 1rem 1.8rem;
+    background-color: var(--color-white);
+    border-radius: 50px;
+    align-self: center;
+}
+
+.img__language {
+    vertical-align: left;
+    display: inline-block;
+}
+
 /* Início da sessão de comentários (testimonials) */
 #testimonials h2 {
     text-align: center;
