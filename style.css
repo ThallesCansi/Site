@@ -22,7 +22,24 @@
 }
 
 html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-primary-variant);
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--color-primary-variant);
+    border-radius: 0.5rem;
 }
 
 body {
@@ -46,7 +63,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6;
+    font-size: 1.6rem;
 }
 
 h4 {
@@ -116,7 +133,6 @@ img {
     border-radius: 50px;
     margin-top:40px;
 }
-
 
 /* Links de navegação (navbar) */
 nav {
@@ -198,6 +214,11 @@ nav a:hover::after{
 .margin_nav {
     box-shadow: 0 0 1.6rem var(--color-primary-variant);;
     margin-bottom: 10px;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
 }
 
 /* Abrir e fechar o botão para dispositivos com telas menores (telefones/tablets) */
@@ -307,7 +328,7 @@ section#companies {
 
 /* Início da sessão de serviços */
 section#servicos {
-    margin-top: 15rem;
+    margin-top: 8rem;
 }
 
 .services__container {
