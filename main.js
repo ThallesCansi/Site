@@ -1,6 +1,25 @@
 const menuBtn = document.querySelector('#open-menu-btn');
 const closeBtn = document.querySelector('#close-menu-btn');
 const menu = document.querySelector('.nav__menu');
+const icon = document.getElementById('icon')
+
+if (icon){
+    icon.addEventListener('click',event =>{
+        console.log(icon.value)
+        if (icon.value == undefined || icon.value=='ligth'){
+            document.body.setAttribute('class','theme-dark');
+            icon.classList.remove('uil-moon');
+            icon.classList.add('uil-sun');
+            icon.value = "dark";
+        }
+        else if (icon.value == 'dark'){
+            document.body.setAttribute('class','theme');
+            icon.classList.remove('uil-sun');
+            icon.classList.add('uil-moon');
+            icon.value = "ligth";
+        }
+    })
+}
 
 // Abrir menu da navbar
 menuBtn.addEventListener('click', () => {
